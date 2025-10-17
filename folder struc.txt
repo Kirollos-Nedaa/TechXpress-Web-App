@@ -1,0 +1,72 @@
+techxpress_react/
+├─ .next/                        # Auto-generated build files
+├─ node_modules/
+├─ public/                       # Static assets (logos, icons, etc.)
+│  ├─ images/
+│  ├─ icons/
+│  └─ favicon.ico
+│
+├─ src/
+│  ├─ app/                       # Next.js App Router (pages & layouts)
+│  │  ├─ layout.tsx              # Root layout (common to all pages)
+│  │  ├─ page.tsx                # Home page
+│  │  ├─ products/
+│  │  │  ├─ page.tsx             # Product list page
+│  │  │  └─ [id]/page.tsx        # Product details page
+│  │  ├─ cart/
+│  │  │  └─ page.tsx
+│  │  ├─ wishlist/
+│  │  │  └─ page.tsx
+│  │  ├─ account/
+│  │  │  ├─ login/page.tsx
+│  │  │  ├─ register/page.tsx
+│  │  │  └─ orders/page.tsx
+│  │  └─ api/                    # Route handlers (optional for server actions)
+│  │
+│  ├─ components/                # Reusable UI components
+│  │  ├─ common/                 # Buttons, Modals, Loaders, etc.
+│  │  ├─ layout/                 # Navbar, Footer, Sidebar
+│  │  ├─ product/                # ProductCard, ProductFilter, etc.
+│  │  ├─ cart/
+│  │  └─ forms/
+│  │
+│  ├─ hooks/                     # Reusable React hooks (useCart, useAuth, etc.)
+│  │  ├─ useAuth.ts
+│  │  ├─ useFetch.ts
+│  │  └─ useTheme.ts
+│  │
+│  ├─ context/                   # Global contexts
+│  │  ├─ AuthContext.tsx
+│  │  ├─ CartContext.tsx
+│  │  └─ ThemeContext.tsx
+│  │
+│  ├─ lib/                       # Utilities & configuration
+│  │  ├─ api.ts                  # Axios instance & base URL setup
+│  │  ├─ helpers.ts              # Utility functions
+│  │  ├─ constants.ts            # API endpoints, static data
+│  │  └─ types.ts                # Shared TypeScript types
+│  │
+│  ├─ services/                  # Data access (API interaction layer)
+│  │  ├─ productService.ts
+│  │  ├─ authService.ts
+│  │  ├─ orderService.ts
+│  │  └─ wishlistService.ts
+│  │
+│  ├─ store/                     # State management (optional, e.g., Zustand/Redux)
+│  │  └─ cartStore.ts
+│  │
+│  ├─ styles/
+│  │  ├─ globals.css
+│  │  └─ tailwind.css
+│  │
+│  └─ types/                     # Domain-specific interfaces
+│     ├─ product.d.ts
+│     ├─ order.d.ts
+│     └─ user.d.ts
+│
+├─ .env.local                    # Environment variables (API URLs, keys)
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ package.json
+├─ tsconfig.json
+└─ next.config.js

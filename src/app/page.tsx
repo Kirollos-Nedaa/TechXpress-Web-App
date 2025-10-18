@@ -1,3 +1,7 @@
-export default function Home() {
+'use client';
+
+function Home() {
   return <></>;
 }
+
+export default Home;
